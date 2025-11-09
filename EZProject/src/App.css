@@ -1,0 +1,57 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  font-family: "Inter", sans-serif;
+  color: #222;
+  background: #f2f4f8;
+  overflow-x: hidden;
+}
+.section,
+.about-team-section,
+.about-us-section,
+.services-section,
+.portfolio-section,
+.contact-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  border-radius: 18px;
+}
+.section h2,
+.about-team-section h2,
+.about-us-section h2,
+.services-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.section,
+.about-team-section,
+.about-us-section,
+.services-section,
+.portfolio-section,
+.contact-section {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
